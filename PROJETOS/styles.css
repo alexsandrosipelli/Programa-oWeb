@@ -5,8 +5,8 @@
 margin:0;
 padding :0;
 box-sizing: border-box;
-
 }
+
 :root{
     --text-primary: #000;
     --text-secundary:#000;
@@ -33,6 +33,11 @@ header{
     color: var(--text-primary) ;
     position : relative ;
     overflow : hidden;   
+}
+
+#areadosbrabo{
+    margin-bottom: 2em;
+    color: #fff;
 }
 header::before
 {
@@ -171,12 +176,12 @@ section{
     display: flex;
     justify-content: center;
     align-items: center;
-   background-color: #212121;
+    background-color: #212121;
 }
 
 #secao-projetos ul{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     gap: 2rem;
     color: var(--text-primary);
 }
@@ -218,7 +223,8 @@ section{
     opacity: 0;
     padding: 2rem;
     text-shadow: 0.3rem 0.2rem 0.3rem rgba(0, 0, 0, 0.6);
-    transition: all 0.1s;
+    transition: all 0.3s;
+    margin-bottom: 7em;
 }
 
 .card:hover .card-text {
@@ -231,7 +237,7 @@ section{
     font-weight: 700;
     font-size: 2rem;
     line-height: 3.3rem;
-    color: #A044FF;
+    color: green;
 }
 
 #secao-projetos p{
