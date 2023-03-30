@@ -17,7 +17,7 @@ function atualizarOrcamento(){
 
     let prazo = document.querySelector("#prazo").value
     let labelPrazo = document.querySelector("label[for=prazo]")
-    labelPrazo.innerHTML = `Prazo (${prazo} semanas)` //template litereal
+    labelPrazo.innerHTML = `Prazo (${prazo} horas)` //template litereal
     let taxaDeUrgencia = 1 - (prazo * .01);
     preco *= taxaDeUrgencia
 
