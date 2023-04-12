@@ -6,11 +6,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portifólio</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet"rel="preload" href="styles.css">
+    <script src="./js/loader.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
+    <div class = "loader">
+        <div class="spin"></div>
+    </div>
+    <main class="hiden">
+
     <nav>
         <div id ="hamburguer">
         <div class="linha" id="linha1"></div>
@@ -29,7 +35,7 @@
     <li><a href="#secao-projetos">
         <i class="fa-solid fa-code"></i>
 
-        projetos
+        Comidas
     </a></li>
     <li><a href="#secao-orcamento">
         <i class="fa-solid fa-hand-holding-dollar"></i>
@@ -59,18 +65,15 @@
 
     <section id="secao-apresentacao">
 
-        <img id="avatar" src="https://avatars.githubusercontent.com/u/116052625?v=4" alt="foto dos brabos">
-        <img id="avatar1" src="https://avatars.githubusercontent.com/u/112717598?v=4" alt="foto dos brabos">
+        <img class="only-large" src="https://avatars.githubusercontent.com/u/116052625?v=4" alt="foto dos brabos">
+        <img class="only-large" src="https://avatars.githubusercontent.com/u/112717598?v=4" alt="foto dos brabos">
         <div>
 
             <h2>
                 A melhor comida da região
             </h2>
             <p>
-                Why do we use it?
-                It is a long established fact that a reader will be distracted by the readable content of a page when
-                looking at its layout. <br>The point of using Lorem Ipsum is that it has a more-or-less normal
-                distribution of letters, as opposed to u
+                Foi o coração do empreendedor que concebeu a empresa e trouxe-a até aqui. Foi com o coração que muitos outros se juntaram à jornada da marca. Mas não é um coração que bate desordenado, ao contrário, ele é um coração apaixonado pela qualidade.
             </p>
             <a href="#" class=" botao1 "> Clique e receba em sua casa
             </a>
@@ -147,10 +150,10 @@
         <a href="https://png.pngtree.com/png-clipart/20201208/original/pngtree-fried-chicken-creative-korean-menu-price-list-poster-png-image_5604766.jpg">Drinks</a>
         <a href="https://png.pngtree.com/png-clipart/20201208/original/pngtree-fried-chicken-creative-korean-menu-price-list-poster-png-image_5604766.jpg">SAC</a>
     </div>
+    </main>
     <script src="./js/script.js"></script>
     <script src="./js/menu.js"></script>
     
-
 </body>
 
 </html>

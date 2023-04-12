@@ -21,6 +21,37 @@ scroll-behavior: smooth;
 body{
 
     font-family: var(--font-default);
+    
+}
+
+
+.loader{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.spin{
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    border: 10px solid #b4b4b4;
+    border-top: 10px solid rgb(77, 153, 77);
+    animation: spin 0.5s linear infinite;
+
+}
+
+@keyframes spin{
+    0%{
+        transform: rotate(0);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.hiden{
+    display: none;
 }
 #hamburguer {
     position: fixed;
@@ -85,6 +116,10 @@ header{
     color: var(--text-primary) ;
     position : relative ;
     overflow : hidden;   
+}
+
+header h1{
+    font-size: clamp(3rem,5vw,5rem)
 }
 
 #areadosbrabo{
@@ -347,3 +382,20 @@ input[type=number]
 #secao-orcamento form output{
     grid-column: 2;
 }
+
+@media (max-width: 850px) {
+    #secao-projetos ul{
+        flex-direction: column;
+    }
+}
+
+@media (width < 768px){
+  .only-large{
+    display: none;
+  }
+}
+
+.only-large{
+    border-radius: 50%;
+}
+
